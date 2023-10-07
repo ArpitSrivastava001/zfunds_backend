@@ -58,15 +58,6 @@ class OrderViewSet(viewsets.ViewSet):
         try:
             user = request.user
             order = self.model.objects.get(unique_link=kwargs['pk'], is_active=True)
-            if order.user != user or order.user.created_by != user:
-                logger.error(f"Order detail error: {str(e)}")
-                return Response({
-                    "success": False,
-                    "message": "You are not authorized to view this order",
-                    "data": {}
-                },
-                status=status.HTTP_403_FORBIDDEN
-            )
             logger.info("Order detail")
             return Response({
                 "success": True,

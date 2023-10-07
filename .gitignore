@@ -7,7 +7,7 @@ venv/
 .env
 
 # Django database
-db.sqlite3
+# db.sqlite3
 
 # Static files (usually collected using "python manage.py collectstatic")
 static/
