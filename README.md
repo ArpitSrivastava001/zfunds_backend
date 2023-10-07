@@ -19,7 +19,7 @@ virtualenv venv
 For Ubuntu
 ```bash
 virtualenv venv
-/venv/bin/activate
+source /venv/bin/activate
 ```
 
 After
