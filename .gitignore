@@ -1,0 +1,49 @@
+# Byte-compiled Python files
+__pycache__/
+*.pyc
+
+# Python environment
+venv/
+.env
+
+# Django database
+db.sqlite3
+
+# Static files (usually collected using "python manage.py collectstatic")
+static/
+media/
+
+# Secret keys and sensitive settings
+*.secret_key
+*.settings_local
+*.env
+
+# Compiled files
+*.mo
+*.po
+*.pot
+
+# Log files
+logs/
+
+# Database backups (if any)
+*.dump
+
+# Ignore IDE-specific files (e.g., for Visual Studio Code, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Ignore project-specific files (e.g., database settings, secret keys)
+*.settings
+
+# Ignore pipenv or poetry environment files
+Pipfile.lock
+poetry.lock
+
+# Ignore editor/IDE backup files
+*~
+
+# Ignore development and runtime files
+*.log
+*.swp
+.DS_Store
